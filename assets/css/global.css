@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(34, 40, 49);
+    color: rgb(255, 255, 255);
+}
+
+a, .email, .cel {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Faz com que a cor do link siga a cor do texto pai */
+    background: none; /* Remove qualquer fundo */
+    border: none; /* Remove bordas */
+    outline: none; /* Remove contornos */
+    padding: 0.3rem 0 0.3rem 0;
+  }
+  
+  
+h1, h2, h3 {
+font-family: 'Rajdhani', sans-serif;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem;
+}
+
