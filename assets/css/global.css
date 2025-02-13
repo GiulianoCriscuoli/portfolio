@@ -4,26 +4,31 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(34, 40, 49);
+    background: linear-gradient(135deg, rgb(30, 36, 44), rgb(34, 40, 49), rgb(40, 46, 55));
     color: rgb(255, 255, 255);
+    min-height: 100vh;
 }
 
 a, .email, .cel {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Faz com que a cor do link siga a cor do texto pai */
-    background: none; /* Remove qualquer fundo */
-    border: none; /* Remove bordas */
-    outline: none; /* Remove contornos */
+    text-decoration: none; 
+    color: inherit; 
+    background: none;
+    border: none;
+    outline: none;
     padding: 0.3rem 0 0.3rem 0;
   }
-  
   
 h1, h2, h3 {
 font-family: 'Rajdhani', sans-serif;
 }
 
-main {
+header {
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 

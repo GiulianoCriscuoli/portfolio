@@ -1,0 +1,99 @@
+@media (max-width: 500px) {
+    .imagem-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-area .nome-area {
+        align-items: center;
+        margin-top: 0.8rem;
+    }
+}
+
+@media (max-width: 748px) {
+    .redes-area {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .container-apresentacao {
+        padding: 0;
+    }
+
+    .info-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .contato-area {
+        align-self: flex-start;
+    }
+
+    .email, .cel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes-area {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .contato-area {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        justify-content: space-between;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container-apresentacao {
+        width: 50%;
+    }
+
+    .imagem-area {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .nome-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-area {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    .redes-area, .contato-area {
+        flex: 1;
+        display: grid
+    }
+
+    .cel {
+        justify-content: flex-start;
+    }
+}

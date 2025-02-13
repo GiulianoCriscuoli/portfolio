@@ -10,27 +10,15 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.imagem-area .nome-area {
-    display: flex;
-    flex-direction: column;
+.imagem-area {
     margin-left: 0.8rem;
-
 }
-
-/* @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes blink {
-    50% { border-color: transparent; }
-} */
 
 .titulo-nome {
-    margin: 0;
-    font-size: 2rem;
     font-weight: bold;
     color: #ff3030cc;
     text-shadow: 0 0 5px #FF3030, 0 0 7px #D100D1;
+    margin: 0;
 }
 
 h1.titulo-nome {
@@ -38,6 +26,8 @@ h1.titulo-nome {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(20, end), blink 0.7s infinite;
+    font-size: clamp(2rem, 9vw, 2.5rem);
+    display: inline-block;
 }
 
 @keyframes typing {
@@ -51,8 +41,13 @@ h1.titulo-nome {
   
 @keyframes blink {
     50% {
-    border-color: transparent;
+        border-color: transparent;
     }
+}
+
+.container-apresentacao {
+    padding-top: 1em;
+    max-width: 100%;
 }
 
 h1.titulo-nome::after {
@@ -66,6 +61,11 @@ h1.titulo-nome::after {
     }
 }
 
+.nome-area p {
+    text-align: center;    
+    font-size: 1rem;
+}
+
 h3.titulo-nome {
     font-size: 1.5rem;
 }
@@ -74,11 +74,12 @@ h3.titulo-nome {
     transform: scale(1.05) rotate(2deg);
 }
 
-.contato-area {
+.info-area {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+}
+
+.contato-area {
     padding-top: 1em;
 }
 
@@ -91,7 +92,7 @@ h3.titulo-nome {
     background-image: url('../icons/whatsapp.svg');
     content: '';
     width: 20px;
-    height: 20px;
+    height: 19px;
     background-repeat: no-repeat;
     fill: #cf0000;
     stroke: #0b92e6;
@@ -107,44 +108,4 @@ h3.titulo-nome {
 
 .contato-area .email::before {
     background-image: url('../icons/email.svg');
-
-}
-
-@media (max-width: 500px) {
-    .imagem-area {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagem-area .nome-area {
-        align-items: center;
-        margin-top: 0.8rem;
-    }
-
-    .info-area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-  
-  @media (min-width: 1024px) {
-    body {
-      font-size: 1.25rem; /* 20px → 20 ÷ 16 = 1.25rem */
-      padding: 2.5rem; /* 40px → 40 ÷ 16 = 2.5rem */
-    }
-  }
-
-  @media (min-width: 600px) {
-    body {
-      font-size: 1.125em;
-      padding: 1.25em;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    body {
-      font-size: 1.25em;
-      padding: 2.5em;
-    }
 }
