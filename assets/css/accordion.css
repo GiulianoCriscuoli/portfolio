@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-color: #f1eeee;
     padding: 3rem;
 }
 
@@ -17,6 +17,7 @@
     width: 100%;
     flex:1;
     margin: 1em 0 0 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .accordion:first {
@@ -73,4 +74,9 @@
     color: #fff; /* Cor do texto que se destaca sobre o fundo branco */
     transition: opacity 0.3s ease-in-out;
     text-shadow: 0 0 5px #ff3030, 0 0 10px #3bcad1;
+}
+
+.accordion-flex.ativo h3::after {
+    transform: rotate(180deg); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
