@@ -58,10 +58,10 @@
 
 @media (min-width: 1024px) {
     header {
-        justify-content: space-between;
-        padding: 1rem;
+        justify-content: space-evenly;
         max-width: 1200px;
         margin: 0 auto;
+        align-items: center;
     }
 
     .container-apresentacao {
@@ -84,16 +84,25 @@
 
     .info-area {
         flex-direction: row;
-        justify-content: space-between;
-        gap: 5rem;
+        justify-content: space-evenly;
     }
 
     .redes-area, .contato-area {
-        flex: 1;
-        display: grid
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .cel {
         justify-content: flex-start;
+    }
+
+    .accordion-area {
+        flex-direction: row;
+    }
+
+    .accordion {
+        max-width: 1040px;
     }
 }
