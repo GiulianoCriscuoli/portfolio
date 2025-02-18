@@ -60,7 +60,7 @@
     header {
         justify-content: space-evenly;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 1rem auto;
         align-items: center;
     }
 
@@ -96,10 +96,6 @@
 
     .cel {
         justify-content: flex-start;
-    }
-
-    .accordion-area {
-        flex-direction: row;
     }
 
     .accordion {
