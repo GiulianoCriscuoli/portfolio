@@ -30,6 +30,12 @@ h1.titulo-nome {
     display: inline-block;
 }
 
+h2.titulo-nome {
+    font-size: 2em;
+    text-shadow: 0 0 7px #FF3030, 0 0 8px #12c7d0;
+    font-weight: 700;
+}
+
 @keyframes typing {
     from {
       width: 0;

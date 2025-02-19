@@ -10,7 +10,7 @@
 .accordion {
     background: linear-gradient(90deg, #ff3030, #3bcad1);
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding: 15px;
     cursor: pointer;
     text-shadow: 0 0 5px #ff3030, 0 0 10px #3bcad1;
@@ -54,6 +54,7 @@
 
 .accordion:hover, .accordion-conteudo ul:hover {
     filter: brightness(1.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .accordion-conteudo {
@@ -62,7 +63,8 @@
     color: #000;
     width: 100%;
     padding: 0;
-    display: none;   
+    display: none;  
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .accordion-conteudo ul {
@@ -74,9 +76,16 @@
     color: #fff; /* Cor do texto que se destaca sobre o fundo branco */
     transition: opacity 0.3s ease-in-out;
     text-shadow: 0 0 5px #ff3030, 0 0 10px #3bcad1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .accordion-flex.ativo h3::after {
     transform: rotate(180deg); 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-conteudo ul li {
+    margin: 0 1rem 0 1rem;
+    font-size: 1em;
 }
