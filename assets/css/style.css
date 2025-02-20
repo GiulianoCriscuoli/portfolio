@@ -119,3 +119,24 @@ h3.titulo-nome {
 .contato-area .email::before {
     background-image: url('../icons/email.svg');
 }
+
+/* Scrollbar para navegadores baseados em WebKit */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Fundo dark suave */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #15c4ca, #ff3030cc); /* Azul e vermelho suaves */
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00a8e8, #ff4747); /* Hover mais vibrante */
+}

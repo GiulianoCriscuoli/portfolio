@@ -73,7 +73,7 @@
     }
 
     .imagem-area {
-        width: 35%;
+        width: 15%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -96,6 +96,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    h3.titulo-nome {
+        align-self: flex-start;
     }
 
     .cel {
