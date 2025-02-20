@@ -1,10 +1,17 @@
-ul.experiencia-area {
+ul.experiencia-area,
+ul.projeto-area {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-wrap: nowrap;
 }
 
+.projeto-titulo {
+    display: flex;
+}
+
+.projeto-area a {
+    border-bottom: 1px double #fff;
+}
 .calendar {
     position: relative;
     padding-left: 1rem;
@@ -12,15 +19,18 @@ ul.experiencia-area {
 
 .descricao {
     padding-bottom: 1rem;
+    font-size: 1em;
 }
 
 .accordion-flex.ativo > .accordion-conteudo > ul > li > span {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    font-size: 1em;
 }
 
-.accordion-flex.ativo > .accordion-conteudo > ul > li > span::before {
-    background-image: url('../icons/calendar.svg');
+.accordion-flex.ativo > .accordion-conteudo > ul > li > span::before,
+.accordion-flex.ativo > .accordion-conteudo > ul > li > .projeto-titulo::before {
+  
     width: 1.2rem;
     height: 1.2rem;
     content: '';
@@ -28,5 +38,12 @@ ul.experiencia-area {
     background-size: contain;
     display: block;
     padding-right: .5rem;
-    
+}
+
+.accordion-flex.ativo > .accordion-conteudo > ul > li > span::before {
+    background-image: url('../icons/calendar.svg');
+}
+
+.accordion-flex.ativo > .accordion-conteudo > ul > li > .projeto-titulo::before {
+    background-image: url('../icons/github.svg');
 }

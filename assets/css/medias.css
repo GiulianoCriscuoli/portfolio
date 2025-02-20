@@ -109,4 +109,12 @@
     .accordion {
         max-width: 1040px;
     }
+
+    .accordion-flex.ativo > .accordion-conteudo > ul > li > span {
+        align-items: flex-center;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
 }
