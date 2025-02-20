@@ -9,6 +9,12 @@ body {
     min-height: 100vh;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 a, .email, .cel {
     text-decoration: none; 
     color: inherit; 

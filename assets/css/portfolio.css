@@ -1,0 +1,32 @@
+ul.experiencia-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.calendar {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.descricao {
+    padding-bottom: 1rem;
+}
+
+.accordion-flex.ativo > .accordion-conteudo > ul > li > span {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-flex.ativo > .accordion-conteudo > ul > li > span::before {
+    background-image: url('../icons/calendar.svg');
+    width: 1.2rem;
+    height: 1.2rem;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    padding-right: .5rem;
+    
+}
