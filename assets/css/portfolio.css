@@ -47,3 +47,30 @@ ul.projeto-area {
 .accordion-flex.ativo > .accordion-conteudo > ul > li > .projeto-titulo::before {
     background-image: url('../icons/github.svg');
 }
+
+
+.certificado-area {
+    display: flex;
+    align-items: flex-start;
+}
+
+.certificado-area li {
+   gap: 10px;
+}
+
+.certificado-area .certificado {
+    max-width: 304px;
+    flex: 2;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.certificado:hover {
+    transform: scale(1.1);
+}
+
+.certificado-area li:nth-child(n+4) { 
+    justify-content: flex-start;
+}

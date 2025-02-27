@@ -117,4 +117,8 @@
     .descricao p {
         font-size: 1rem;
     }
+
+    .certificado-area .certificado {
+        min-height: 225px;
+    }
 }
