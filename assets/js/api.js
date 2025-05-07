@@ -5,7 +5,7 @@ async function buscarRepos() {
 
       const principais = repos
         .sort((a, b) => a.stargazers_count - b.stargazers_count)
-        .slice(0, 5); 
+        .slice(0, 7); 
 
       const lista = document.getElementById('repos');
 
@@ -44,17 +44,19 @@ async function buscarDados() {
         const dados = await response.json();
 
         document.getElementById('nome').innerText = dados.nome;
+        document.querySelector('.foto').src = dados.foto;
         document.getElementById('cargo').innerText = dados.cargo;
-        document.getElementById('email').innerText = dados.email;
+        document.getElementById('email_url').innerText = dados.email;
         document.getElementById('telefone').innerText = dados.telefone;
+        document.getElementById('email_url').href = dados.email_url;
+        document.getElementById('telefone').href = dados.cel_url;
 
+        redesItens = document.querySelectorAll('.redes-item');
         
-        dados.redes.forEach(rede => {
-            const item = document.createElement('li');
-            item.innerHTML = `
-                    <a href="${rede.url}" target="_blank">${rede.nome}</a>
-                `;
-            document.getElementById('redes').appendChild(item);
+        dados.redes.forEach((rede, i) => {
+            redesItens[i].href = rede.url;
+            redesItens[i].target = '_blank';
+            redesItens[i].innerHTML = rede.nome;
         });
 
         dados.idiomas.forEach(idioma => {
@@ -65,9 +67,29 @@ async function buscarDados() {
                             `;
                             document.getElementById('idiomas').appendChild(item);
         });
-   
-        
-        console.log(dados.redes);
+          
+        const spans = document.querySelectorAll('.experiencia-area span');
+        const descricoes = document.querySelectorAll('.experiencia-area .descricao');
+
+        dados.experiencias.forEach((experiencia, i) => {
+            if (spans[i]) {
+                spans[i].innerHTML = experiencia.periodo;
+            }
+            if (descricoes[i]) {
+                descricoes[i].innerHTML = experiencia.descricao;
+            }
+        });
+
+        const certificadosArea = document.querySelector('.certificado-area');   
+
+        dados.certificados.forEach((certificado, i) => {
+            const item = document.createElement('li');
+            item.innerHTML = `
+                <img class="certificado" src="${certificado.imagem}" alt="certificado">
+            `;
+            certificadosArea.appendChild(item);
+        });
+
     } catch (error) {
         console.error('Erro ao buscar dados:', error);
     }

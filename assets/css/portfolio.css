@@ -20,6 +20,11 @@ ul.projeto-area {
 .descricao {
     padding-bottom: 1rem;
     font-size: 1em;
+ 
+}
+
+.experiencia-area .descricao {
+    padding-top: 0.5rem;
 }
 
 .accordion-flex.ativo > .accordion-conteudo > ul > li > span {

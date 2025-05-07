@@ -11,10 +11,10 @@
 }
 
 @media (max-width: 748px) {
-    .redes-area {
+    .redes-area, #redes {
         display: flex;
         flex-direction: column;
-    }
+    } 
 }
 
 @media (min-width: 600px) {
@@ -120,5 +120,11 @@
 
     .certificado-area .certificado {
         min-height: 225px;
+    }
+
+    .redes-area, #redes {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start
     }
 }
