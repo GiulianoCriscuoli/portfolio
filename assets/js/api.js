@@ -47,8 +47,8 @@ async function buscarDados() {
         document.querySelector('.foto').src = dados.foto;
         document.getElementById('cargo').innerText = dados.cargo;
         document.getElementById('email_url').innerText = dados.email;
-        document.getElementById('telefone').innerText = dados.telefone;
         document.getElementById('email_url').href = dados.email_url;
+        document.getElementById('telefone').innerText = dados.telefone;
         document.getElementById('telefone').href = dados.cel_url;
 
         redesItens = document.querySelectorAll('.redes-item');
