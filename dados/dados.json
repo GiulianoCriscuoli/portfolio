@@ -1,0 +1,82 @@
+{
+    "nome": "Giuliano Criscuoli",
+    "cargo": "Desenvolvedor Full Stack",
+    "email": "giulianodias450@gmail.com",
+    "email_alternativo": "giulianodias450@hotmail.com",
+    "telefone": "(51) 986511018",
+    "foto": "assets/img/perfil.jpeg",
+
+    "experiencias": [
+        {
+            "empresa": "OAB/RS",
+            "cargo": "Desenvolvedor Full Stack",
+            "periodo": "04/2022 - atual momento",
+            "descricao": "Na OAB RS, atuo como desenvolvedor web PHP, sendo responsável tanto pelo desenvolvimento de soluções para o back-end quanto pelo front-end. Tenho experiência na criação de APIs RestFul, integração com web services e desenvolvimento de sistemas voltados para setores internos e gerenciamento organizacional. Além disso, desenvolvi uma plataforma de cursos EAD, integrada à API do Moodle. Consolidei minha experiência como desenvolvedor pleno, ampliando meus conhecimentos em administração de servidores Linux e utilizando Docker para a conteinerização de projetos."
+        },
+        {
+            "empresa": "Medialine Soluções Digitais",
+            "cargo": "Desenvolvedor Full Stack",
+            "periodo": "11/2020 - 04/2022",
+            "descricao": "A Medialine é uma empresa de desenvolvimento de software e publicidade, onde desenvolvi competências técnicas como desenvolvedor full stack, utilizando PHP, JavaScript e os frameworks Laravel e Vue.js. Atuei no desenvolvimento de e-commerces, landing pages e sistemas para diversos segmentos comerciais, como indústrias, imobiliárias, atacadistas, entre outros. Além das habilidades técnicas, aprimorei minha comunicação e a capacidade de gerenciar prazos, otimizando minhas entregas e produtividade."
+        }
+    ],
+    "tecnologias": [
+        {
+            "nome": ["PHP", "Laravel", "Vue.js", "Java", "Node.js"]
+        }
+    ],
+    "certificados": [
+        {
+            "nome": "Certificado 1",
+            "descricao": "Descrição do certificado 1",
+            "imagem": "assets/img/certificados/php.png"
+        },
+        {
+            "nome": "Certificado 2",
+            "descricao": "Descrição do certificado 2",
+            "imagem": "assets/img/certificados/javascript.jpeg"
+        },
+        {
+            "nome": "Certificado 3",
+            "descricao": "Descrição do certificado 3",
+            "imagem": "assets/img/certificados/nodejs.jpeg"
+        },
+        {
+            "nome": "Certificado 4",
+            "descricao": "Descrição do certificado 4",
+            "imagem": "assets/img/certificados/github.jpg"
+        },
+        {
+            "nome": "Certificado 5",
+            "descricao": "Descrição do certificado 5",
+            "imagem": "assets/img/certificados/gpt.png"
+        }
+    ],
+    "redes": [
+        {
+            "nome": "Linkedin",
+            "descricao": "Descrição da rede 1",
+            "imagem": "assets/img/redes/linkedin.png"
+        },
+        {
+            "nome": "GitHub",
+            "descricao": "Descrição da rede 2",
+            "imagem": "assets/img/redes/github.png"
+        },
+        {
+            "nome": "Instagram",
+            "descricao": "Descrição da rede 3",
+            "imagem": "assets/img/redes/instagram.png"
+        }
+    ],
+    "idiomas": [
+        {
+            "nome": "Português",
+            "nivel": "Nativo"
+        },
+        {
+            "nome": "Inglês",
+            "nivel": "Intermediário B2"
+        }
+    ]
+}
