@@ -2,7 +2,6 @@
     "nome": "Giuliano Criscuoli",
     "cargo": "Desenvolvedor Full Stack",
     "email": "giulianodias450@gmail.com",
-    "email_alternativo": "giulianodias450@hotmail.com",
     "telefone": "(51) 986511018",
     "foto": "assets/img/perfil.jpeg",
 
@@ -54,18 +53,18 @@
     ],
     "redes": [
         {
+            "url": "https://www.linkedin.com/in/giuliano-criscuoli",
             "nome": "Linkedin",
-            "descricao": "Descrição da rede 1",
             "imagem": "assets/img/redes/linkedin.png"
         },
         {
+            "url": "https://github.com/GiulianoCriscuoli",
             "nome": "GitHub",
-            "descricao": "Descrição da rede 2",
             "imagem": "assets/img/redes/github.png"
         },
         {
+            "url": "https://www.instagram.com/giucriscuoli",
             "nome": "Instagram",
-            "descricao": "Descrição da rede 3",
             "imagem": "assets/img/redes/instagram.png"
         }
     ],

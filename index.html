@@ -21,17 +21,17 @@
 
                 <div class="container-apresentacao">
                     <div class="nome-area">
-                        <h1 class="titulo-nome">Giuliano Criscuoli</h1>
-                        <p>Desenvolvedor Full Stack</p>
+                        <h1 class="titulo-nome" id="nome"></h1>
+                        <p id="cargo"></p>
                     </div>
                     
                     <div class="info-area">
 
                         <div class="redes-area">
                             <h3 class="titulo-nome">Redes sociais</h3>
-                            <a href="https://github.com/GiulianoCriscuoli" target="_blank">Github</a>
-                            <a href="https://www.linkedin.com/in/giuliano-criscuoli" target="_blank">LinkedIn</a>
-                            <a href="https://www.instagram.com/giucriscuoli" target="_blank">@giucriscuoli</a>
+                            <div id="redes">
+                                <a href="" target="_blank"></a>
+                            </div>
                         </div>
                         
                         <div class="contato-area">
@@ -40,16 +40,11 @@
                             <div class="cel-email">
 
                                 <div class="cel">
-                                    <a href="https://api.whatsapp.com/send?phone=5551986511018" target="_blank">(51) 986511018</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5551986511018" target="_blank" id="telefone"></a>
                                 </div>
     
                                 <div class="email">
-                                    <a href="mailto:giulianodias450@gmail.com" target="_blank">giulianodias450@gmail.com</a>
-                                </div>
-                            
-                                
-                                <div class="email">
-                                    <a href="mailto:giulianodias3@hotmail.com" target="_blank">giulianodias3@hotmail.com</a>
+                                    <a href="mailto:giulianodias450@gmail.com" target="_blank" id="email"></a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +58,7 @@
                 </h2>
                 <div class="accordion-flex">
                     <div class="accordion">
-                        <h3 class="accordion-titulo">Projetos GitHub</h3>
+                        <h3 class="accordion-titulo" id="projetos">Projetos</h3>
                     </div>
                     <div class="accordion-conteudo">
                         <ul class="projeto-area" id="repos"></ul>
@@ -73,23 +68,17 @@
 
                 <div class="accordion-flex">
                     <div class="accordion">
-                        <h3 class="accordion-titulo">Experiências</h3>
+                        <h3 class="accordion-titulo" id="experiencias">experiências</h3>
                     </div>
                     <div class="accordion-conteudo">
                         <ul class="experiencia-area">
                             <li class="calendar"> 
-                                <span>OAB/RS - 04/2022 - atual momento</span>
-                                <div class="descricao">
-                                    <p>Na OAB RS, atuo como desenvolvedor web PHP, sendo responsável tanto pelo desenvolvimento de soluções para o back-end quanto pelo front-end. Tenho experiência na criação de APIs RestFul, integração com web services e desenvolvimento de sistemas voltados para setores internos e gerenciamento organizacional. Além disso, desenvolvi uma plataforma de cursos EAD, integrada à API do Moodle.</p>
-                                    <p>Consolidei minha experiência como desenvolvedor pleno, ampliando meus conhecimentos em administração de servidores Linux e utilizando Docker para a conteinerização de projetos.</p>
-
-                                </div>
+                                <span id="oab"></span>
+                                <div class="descricao" id="oab-descricao"></div>
                             </li>
                             <li class="calendar"> 
-                                <span>Medialine Soluções Digitais - 11/2020 - 04/2022</span>
-                                <div class="descricao">
-                                    <p>A Medialine é uma empresa de desenvolvimento de software e publicidade, onde desenvolvi competências técnicas como desenvolvedor full stack, utilizando PHP, JavaScript e os frameworks Laravel e Vue.js. Atuei no desenvolvimento de e-commerces, landing pages e sistemas para diversos segmentos comerciais, como indústrias, imobiliárias, atacadistas, entre outros. Além das habilidades técnicas, aprimorei minha comunicação e a capacidade de gerenciar prazos, otimizando minhas entregas e produtividade.</p>
-                                </div>
+                                <span id="medialine"></span>
+                                <div class="descricao" id="medialine-descricao"></div>
                             </li>
                         </ul>
                     </div>
@@ -97,7 +86,7 @@
 
                 <div class="accordion-flex">
                     <div class="accordion">
-                        <h3 class="accordion-titulo">Principais Tecnologias</h3>
+                        <h3 class="accordion-titulo" id="tecnologias">Tecnologias</h3>
                     </div>
                     <div class="accordion-conteudo">
                         <div id="perfil">
@@ -113,19 +102,19 @@
                     <div class="accordion-conteudo">
                         <ul class="certificado-area">
                             <li>
-                                <img class="certificado" src="assets/img/certificados/php.png" alt="certificado_php">
+                                <img class="certificado" src="assets/img/certificados/php.png" alt="certificado_php" id="certificado_php">
                             </li>
                             <li> 
-                                <img class="certificado" src="assets/img/certificados/javascript.jpeg" alt="certificado_javascript">
+                                <img class="certificado" src="assets/img/certificados/javascript.jpeg" alt="certificado_javascript" id="certificado_javascript">
                             </li>
                             <li>
-                                <img class="certificado" src="assets/img/certificados/nodejs.jpeg" alt="certificado_node">
+                                <img class="certificado" src="assets/img/certificados/nodejs.jpeg" alt="certificado_node" id="certificado_node">
                             </li>
                             <li>
-                                <img class="certificado" src="assets/img/certificados/github.jpg" alt="certificado_github">
+                                <img class="certificado" src="assets/img/certificados/github.jpg" alt="certificado_github" id="certificado_github">
                             </li>
                             <li>
-                                <img class="certificado" src="assets/img/certificados/gpt.png" alt="certificado_gpt">
+                                <img class="certificado" src="assets/img/certificados/gpt.png" alt="certificado_gpt" id="certificado_gpt">
                             </li>
                         </ul>
                     </div>
@@ -135,12 +124,9 @@
                     <div class="accordion">
                         <h3 class="accordion-titulo">Idiomas</h3>
                     </div>
-                    <div class="accordion-conteudo">
-                        <ul>
-                            <li>Português - Nativo</li>
-                            <li>Inglês - Intermediário B2</li>
-                        </ul>
-                    </div>
+                        <div class="accordion-conteudo">
+                            <ul id="idiomas"></ul>
+                        </div>
                 </div>
             </section>
         </main>

@@ -38,5 +38,41 @@ try {
 }
 }
 
+async function buscarDados() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/GiulianoCriscuoli/portfolio/refs/heads/master/dados/dados.json');
+        const dados = await response.json();
+
+        document.getElementById('nome').innerText = dados.nome;
+        document.getElementById('cargo').innerText = dados.cargo;
+        document.getElementById('email').innerText = dados.email;
+        document.getElementById('telefone').innerText = dados.telefone;
+
+        
+        dados.redes.forEach(rede => {
+            const item = document.createElement('li');
+            item.innerHTML = `
+                    <a href="${rede.url}" target="_blank">${rede.nome}</a>
+                `;
+            document.getElementById('redes').appendChild(item);
+        });
+
+        dados.idiomas.forEach(idioma => {
+            const item = document.createElement('li');
+                            item.innerHTML = `
+                                <h3 class="accordion-titulo">${idioma.nome}</h3>
+                                <p>${idioma.nivel}</p>
+                            `;
+                            document.getElementById('idiomas').appendChild(item);
+        });
+   
+        
+        console.log(dados.redes);
+    } catch (error) {
+        console.error('Erro ao buscar dados:', error);
+    }
+}
+
+buscarDados();
 buscarPerfil();
 buscarRepos();
